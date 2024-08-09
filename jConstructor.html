@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function person(first,last,age,eye){
+            this.first=first;
+            this.last=last;
+            this.age=age;
+            this.eye=eye;
+        }
+        const myfriend=new person("john","doe",40,'blue'); 
+        const mycousin=new person("Balaji","Chaudary",30,'black');
+        //myfriend.change("skully");//
+        //for single object we give like this//
+        //myfriend.nationality="India";//
+        //for giving all people giving like this//
+        person.prototype.nationality="Indians";
+        person.prototype.changeName=function(name){
+            this.lastName=name;
+        }
+        myfriend.changeName("Skully");
+        myfriend.lastName="Vinay";
+       // document.getElementById("demo").innerHTML="My friend name is "+myfriend.first+" and his nationality "+myfriend.nationality;//
+   document.getElementById("demo").innerHTML="My details are " +JSON.stringify(myfriend);
+   </script>
+</body>
+</html>

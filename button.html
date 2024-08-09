@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        #demo{
+            color:rgb(198, 90, 22);
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>javascript button</h1>
+    <h1 id="demo"></h1>
+   <p onclick="this.innerHTML='you click this para'">Click on this para</p>
+   <button onmouseover="fun()">Show</button>
+    <script>
+        function fun(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+</body>
+</html>

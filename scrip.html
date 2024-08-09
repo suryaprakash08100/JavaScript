@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h2 id="m"></h2>
+    <script>
+        const myObj={name:"Surya",
+            phone:"8008386582",address:{street:"Chivatam",city:"Tanuku"
+        }}
+        const fruits={Bananas:200,Apples:400,Goas:500};
+        let text="";
+        for(let[fruit,amount] of Object.entries(fruits))
+        text+=fruit+":"+amount+"<br>"
+        document.getElementById("demo").innerHTML=text;
+        document.getElementById("m").innerHTML=JSON.stringify(myObj);
+    </script>
+</body>
+</html>
