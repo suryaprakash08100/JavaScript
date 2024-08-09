@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <h2 id="demo"></h2>
+    <button onclick="max()">Click me</button>
+    <script>
+        const n=[5,6,8,3,9]
+        function max(n){
+            return Math.min.apply(null,n);
+        }
+    //const fruits=["Banana",["pinneapple","Goa"],"Orange","Mango"];
+   // const vegetables=["Tomato","Carrot"]//
+    //document.getElementById("demo").innerHTML=""+delete fruits[1];//
+    //document.getElementById("demo").innerHTML=""+fruits.flatMap(x=>[x,x+"*"]);
+   // document.getElementById("demo").innerHTML=""+fruits.flatMap(x=>[x,x*3]);
+       //document.getElementById("demo").innerHTML=""+fruits.flatMap(x=>[x,x+"*"]);
+       document.getElementById("demo").innerHTML=""+n.sort();
+
+    </script>     
+</body>
+</html>
