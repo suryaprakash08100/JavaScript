@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function validateForm(){
+            let x=document.forms["loginform"]["fname"].value;
+            if(x ==""){
+                alert("Name must not be empty")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="loginform" action="a.js" onsubmit="return validateForm()" method="post">
+    Name:<input type="text" name="fname"><br>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>
